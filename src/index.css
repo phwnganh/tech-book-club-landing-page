@@ -1,6 +1,32 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/inter/Inter-VariableFont_opsz,wght.ttf") format("truetype-variations");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("./assets/fonts/inter/Inter-Italic-VariableFont_opsz,wght.ttf") format("truetype-variations");
+}
+
+@font-face {
+  font-family: 'Martian Mono';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 800;
+  src: url("./assets/fonts/martian-mono/MartianMono-VariableFont_wdth,wght.ttf") format("truetype-variations");
+}
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Martian Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
 
   @theme{
     --color-neutral-900: #062630;
@@ -13,46 +39,53 @@
     --color-light-salmon-100: #FFE2D1;
     --color-light-salmon-50: #FFF5EF;
 
-    --color-text-gradient: linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
+    --text-gradient: linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
     --color-gradient: linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
 
     --text-preset-1-font-size: 62px;
-    --text-preset-1-line-height: 120%;
-    --text-preset-1-letter-spacing: -2px;
-    --text-preset-1-font-weight: 700;
+    --font-preset-1-font-family: var(--font-mono);
+    --leading-preset-1-line-height: 120%;
+    --tracking-preset-1-letter-spacing: -2px;
+    --font-weight-preset-1-font-weight: 700;
     --text-preset-1-mobile-font-size: 38px;
 
     --text-preset-2-font-size: 50px;
-    --text-preset-2-line-height: 130%;
-    --text-preset-2-letter-spacing: -2px;
-    --text-preset-2-font-weight: 700;
+    --font-preset-text-2-font-family: var(--font-mono);
+    --leading-preset-2-line-height: 130%;
+    --tracking-preset-2-letter-spacing: -2px;
+    --font-weight-preset-2-font-weight: 700;
     --text-preset-2-mobile-font-size: 34px;
 
     --text-preset-3-font-size: 34px;
-    --text-preset-3-line-height: 130%;
-    --text-preset-3-letter-spacing: -1px;
-    --text-preset-3-font-weight: 600;
-    --text-preset-3--mobile-font-size: 24px;
+    --font-preset-3-font-family: var(--font-mono);
+    --leading-preset-3-line-height: 130%;
+    --tracking-preset-3-letter-spacing: -1px;
+    --font-weight-preset-3-font-weight: 600;
+    --text-preset-3-mobile-font-size: 24px;
 
     --text-preset-4-font-size: 24px;
-    --text-preset-4-line-height: 110%;
-    --text-preset-4-letter-spacing: -1px;
-    --text-preset-4-font-weight: 600;
+    --font-preset-4-font-family: var(--font-mono);
+    --leading-preset-4-line-height: 110%;
+    --tracking-preset-4-letter-spacing: -1px;
+    --font-weight-preset-4-font-weight: 600;
 
     --text-preset-5-font-size: 20px;
-    --text-preset-5-line-height: 140%;
-    --text-preset-5-letter-spacing: -0.5px;
-    --text-preset-5-mobile-font-weight: 600;
+    --font-preset-5-font-family: var(--font-sans);
+    --leading-preset-5-line-height: 140%;
+    --tracking-preset-5-letter-spacing: -0.5px;
+    --font-weight-preset-5-mobile-font-weight: 600;
 
     --text-preset-6-font-size: 18px;
-    --text-preset-6-line-height: 130%;
-    --text-preset-6-letter-spacing: -1px;
-    --text-preset-6-font-weight: 600;
+    --font-preset-6-font-family: var(--font-mono);
+    --leading-preset-6-line-height: 130%;
+    --tracking-preset-6-letter-spacing: -1px;
+    --font-weight-preset-6-font-weight: 600;
     --text-preset-6-mobile-font-size: 16px;
 
     --text-preset-7-font-size: 14px;
-    --text-preset-7-line-height: 120%;
-    --text-preset-7-letter-spacing: -1px;
+    --font-preset-7-font-family: var(--font-mono);
+    --leading-preset-7-line-height: 120%;
+    --tracking-preset-7-letter-spacing: -1px;
 
   --spacing-025: 2px;
     --spacing-050: 4px;
@@ -77,6 +110,13 @@
     --radius-20: 20px;
     --radius-24: 24px;
     --radius-full: 999px;
+  }
+
+  .text-gradient {
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 }
 
