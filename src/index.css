@@ -118,5 +118,9 @@
     background-clip: text;
     color: transparent;
   }
+
+  .pattern-circle{
+    background-image: url("./assets/images/pattern-circle.png");
+  }
 }
 
