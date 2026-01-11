@@ -25,7 +25,7 @@ const BookClubFeatureSection = () => {
                 <div className={"flex items-center justify-center w-full md:max-w-140"}>
                     <img src={ReadTogetherImage} alt="ReadTogether" className={"rounded-16"}/>
                 </div>
-                <div className={"flex flex-col gap-400"}>
+                <div className={"flex flex-col gap-6 md:gap-400"}>
                     <h2 className={"font-preset-2-font-weight font-preset-text-2-font-family text-preset-2-mobile-font-size sm:text-preset-2-font-size leading-preset-2-line-height tracking-preset-2-letter-spacing text-neutral-900"}>Read together,
                         grow together</h2>
                     <div className={"flex flex-col gap-4 sm:gap-6"}>
