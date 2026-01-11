@@ -30,7 +30,7 @@ const BookClubFeatureSection = () => {
                         grow together</h2>
                     <div className={"flex flex-col gap-4 sm:gap-6"}>
                         {MEMBERSHIP_JOURNEY_ITEMS.map((item, index) => (
-                            <div className={"flex items-center gap-4"}>
+                            <div key={index} className={"flex items-center gap-4"}>
                                 <div className={"flex justify-center items-center w-6 h-4"}>
                                     <img src={CheckIcon} alt="check-icon"/>
                                 </div>

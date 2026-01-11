@@ -1,5 +1,5 @@
 import HeroBannerSection from "./components/HeroBannerSection";
-import OurCommunitySection from "./components/OurCommunitySection";
+import ReadingJourneySection from "./components/ReadingJourneySection.jsx";
 import BookClubFeatureSection from "./components/BookClubFeatureSection.jsx";
 import MembershipPriceOptionsSection from "./components/MembershipPriceOptionsSection";
 import FooterSection from "./components/FooterSection";
@@ -11,7 +11,7 @@ const MainPage = () => {
             <HeroBannerSection/>
             <BookClubFeatureSection/>
             <NotYourAverageHeroSection/>
-            <OurCommunitySection/>
+            <ReadingJourneySection/>
             <MembershipPriceOptionsSection/>
             <FooterSection/>
         </main>

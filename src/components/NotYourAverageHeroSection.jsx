@@ -1,5 +1,5 @@
-import NotEverageImage from '../assets/images/image-not-average-desktop.webp'
 import TechsLogo from '../assets/images/logos-tech.svg'
+import NotEverageImage from '../assets/images/image-not-average-desktop.webp'
 const NotYourAverageHeroSection = () => {
     return (
         <section className={"max-w-292.5 mx-auto px-4 sm:px-8 md:px-0"}>
