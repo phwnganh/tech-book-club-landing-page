@@ -1,8 +1,8 @@
 import Logo from '../assets/images/logo.svg'
 import ArrowUpIcon from '../assets/images/icon-arrow-down.svg'
 import AvatarImage from '../assets/images/image-avatars.webp'
-import StarIcon from '../assets/images/icon-star.svg'
 import HeroDesktop from '../assets/images/image-hero-desktop.webp'
+import FiveStars from "./ui/FiveStars.jsx";
 const HeroBannerSection = () => {
     return (
         <section className="max-w-292.5 mx-auto mt-8 px-4 sm:px-8 md:px-0">
@@ -27,12 +27,7 @@ const HeroBannerSection = () => {
                                 <img src={AvatarImage} alt={"avatar-image"}/>
                             </div>
                             <div className={"flex flex-col gap-1"}>
-                                <div className={"flex"}>
-                                    {Array.from({length: 5}).map((star, index) =>
-                                        <div key={index} className={"flex justify-center items-center"}>
-                                            <img src={StarIcon} alt={"star-icon"} />
-                                        </div>)}
-                                </div>
+                                    <FiveStars/>
                                 <p className={"text-preset-7-font-size font-preset-7-font-family leading-preset-7-line-height tracking-preset-7-letter-spacing text-neutral-700"}>200+ developers joined already</p>
 
                             </div>

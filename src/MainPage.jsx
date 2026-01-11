@@ -4,6 +4,7 @@ import BookClubFeatureSection from "./components/BookClubFeatureSection.jsx";
 import MembershipPriceOptionsSection from "./components/MembershipPriceOptionsSection";
 import FooterSection from "./components/FooterSection";
 import NotYourAverageHeroSection from "./components/NotYourAverageHeroSection.jsx";
+import ReadingQuoteSection from "./components/ReadingQuoteSection.jsx";
 
 const MainPage = () => {
     return (
@@ -13,6 +14,7 @@ const MainPage = () => {
             <NotYourAverageHeroSection/>
             <ReadingJourneySection/>
             <MembershipPriceOptionsSection/>
+            <ReadingQuoteSection/>
             <FooterSection/>
         </main>
     );
