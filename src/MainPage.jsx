@@ -15,7 +15,10 @@ const MainPage = () => {
             <ReadingJourneySection/>
             <MembershipPriceOptionsSection/>
             <ReadingQuoteSection/>
-            <FooterSection/>
+            <div className={"bg-neutral-900"}>
+                <FooterSection/>
+
+            </div>
         </main>
     );
 };
