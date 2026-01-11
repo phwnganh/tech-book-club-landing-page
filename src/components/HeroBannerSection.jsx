@@ -3,6 +3,7 @@ import ArrowUpIcon from '../assets/images/icon-arrow-down.svg'
 import AvatarImage from '../assets/images/image-avatars.webp'
 import HeroDesktop from '../assets/images/image-hero-desktop.webp'
 import FiveStars from "./ui/FiveStars.jsx";
+import CustomButton from "./ui/CustomButton.jsx";
 const HeroBannerSection = () => {
     return (
         <section className="max-w-292.5 mx-auto mt-8 px-4 sm:px-8 md:px-0">
@@ -15,12 +16,12 @@ const HeroBannerSection = () => {
                     </div>
 
                     <div className="flex flex-col gap-5">
-                        <button className="border-2 border-neutral-900 rounded-sm bg-light-salmon-50 flex justify-center items-center gap-4 py-250 sm:py-300 max-w-95">
+                        <CustomButton classname={"border-neutral-900 rounded-sm bg-light-salmon-50 max-w-95 gradient focus:outline-none"}>
                             <p className="font-preset-6-font-family font-preset-6-font-weight text-preset-6-mobile-font-size sm:text-preset-6-font-size leading-preset-6-line-height tracking-preset-6-letter-spacing">REVIEW MEMBERSHIP OPTIONS</p>
                             <div className="flex justify-center items-center">
                                 <img src={ArrowUpIcon} alt={"arrow-up-icon"} />
                             </div>
-                        </button>
+                        </CustomButton>
 
                         <div className={"flex items-center gap-3"}>
                             <div className="w-27 h-16 flex justify-center items-center">

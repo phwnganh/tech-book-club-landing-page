@@ -56,7 +56,7 @@ const MembershipPriceOptionsSection = () => {
                                     <p className={"text-neutral-700 text-preset-5-font-size font-preset-5-font-family font-preset-5-mobile-font-weight sm:font-normal leading-preset-5-line-height tracking-preset-5-letter-spacing"}>{option.feature_2}</p>
                                 </div>
                             </div>
-                        <button className={"border-2 border-neutral-900 rounded-lg px-6 py-4 bg-light-salmon-50"}>
+                        <button className={"border-2 border-neutral-900 rounded-lg px-6 py-4 bg-light-salmon-50 gradient"}>
                             <p className={"text-neutral-900 text-preset-6-mobile-font-size sm:text-preset-6-font-size font-preset-6-font-family font-preset-6-font-weight leading-preset-6-line-height tracking-preset-6-letter-spacing"}>SUBSCRIBE NOW</p>
                         </button>
 

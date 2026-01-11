@@ -119,6 +119,10 @@
     color: transparent;
   }
 
+  .gradient:hover{
+    background: var(--color-gradient);
+  }
+
   .pattern-circle{
     background-image: url("./assets/images/pattern-circle.png");
   }

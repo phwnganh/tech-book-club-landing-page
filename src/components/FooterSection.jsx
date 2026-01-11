@@ -3,6 +3,7 @@ import AvatarImage from "../assets/images/image-avatars.webp";
 import FiveStars from "./ui/FiveStars.jsx";
 import BlueSkyIcon from '../assets/images/logo-bluesky.svg'
 import LinkedInIcon from '../assets/images/logo-linkedin.svg'
+import CustomButton from "./ui/CustomButton.jsx";
 
 const FooterSection = () => {
     return (
@@ -13,13 +14,12 @@ const FooterSection = () => {
                         Ready to debug your reading list?
                     </h1>
                     <div className={"flex flex-col gap-6 items-start sm:items-center"}>
-                        <button className={"border-2 border-neutral-0 rounded-lg bg-transparent flex justify-center items-center gap-4 px-6 py-250 sm:py-300 w-full"}>
+                        <CustomButton classname={"border-neutral-0 rounded-lg bg-transparent w-full hover:bg-linear-to-r hover:from-neutral-700 hover:to-neutral-900"}>
                             <p className={"font-preset-6-font-family font-preset-6-font-weight text-preset-6-mobile-font-size sm:text-preset-6-font-size leading-preset-6-line-height tracking-preset-6-letter-spacing text-neutral-0"}>REVIEW MEMBERSHIP OPTIONS</p>
                             <div className="flex justify-center items-center">
                                 <img src={ArrowUpIcon} alt={"arrow-up-icon"} />
                             </div>
-                        </button>
-
+                        </CustomButton>
                         <div className={"flex items-center gap-3"}>
                             <div className="w-27 h-16 flex justify-center items-center">
                                 <img src={AvatarImage} alt={"avatar-image"}/>
