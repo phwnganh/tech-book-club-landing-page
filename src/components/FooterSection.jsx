@@ -14,7 +14,7 @@ const FooterSection = () => {
                         Ready to debug your reading list?
                     </h1>
                     <div className={"flex flex-col gap-6 items-start sm:items-center"}>
-                        <CustomButton classname={"border-neutral-0 rounded-lg bg-transparent w-full hover:bg-linear-to-r hover:from-neutral-700 hover:to-neutral-900"}>
+                        <CustomButton classname={"border-neutral-0 rounded-lg bg-transparent w-full hover:bg-linear-to-r hover:from-neutral-700 hover:to-neutral-900 focus:outline-none focus:shadow-[inset_0_0_0_3px_#062630,inset_0_0_0_5px_#E6E1DF]"}>
                             <p className={"font-preset-6-font-family font-preset-6-font-weight text-preset-6-mobile-font-size sm:text-preset-6-font-size leading-preset-6-line-height tracking-preset-6-letter-spacing text-neutral-0"}>REVIEW MEMBERSHIP OPTIONS</p>
                             <div className="flex justify-center items-center">
                                 <img src={ArrowUpIcon} alt={"arrow-up-icon"} />
