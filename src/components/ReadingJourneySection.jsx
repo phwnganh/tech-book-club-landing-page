@@ -20,9 +20,9 @@ const ReadingJourneySection = () => {
     ]
     return (
         <section className={"max-w-292.5 mx-auto py-20 px-4 sm:px-8 md:px-0 bg-neutral-100 rounded-12 bg-[url(./assets/images/pattern-glow.svg)] bg-no-repeat bg-top-right bg-size-[684px_684px]"}>
-            <div className={"max-w-262.5 flex flex-col gap-8 sm:gap-12 md:gap-16 justify-center"}>
+            <div className={"flex flex-col gap-8 sm:gap-12 md:gap-16 justify-center"}>
                     <h1 className={"text-preset-2-mobile-font-size sm:text-preset-2-font-size font-preset-text-2-font-family font-preset-2-font-weight leading-preset-2-line-height tracking-preset-2-letter-spacing text-neutral-900 text-start md:text-center"}>Your tech reading journey</h1>
-                    <div className={"flex flex-col md:flex-row gap-8 sm:gap-10 md:gap-12"}>
+                    <div className={"flex flex-col md:flex-row gap-8 sm:gap-10 md:gap-12 px-4 sm:px-8 md:px-15"}>
                     {READING_JOURNEY_ITEMS.map((item, index) => {
                         const isLast = index === READING_JOURNEY_ITEMS.length - 1;
                         return (
