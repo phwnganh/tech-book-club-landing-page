@@ -6,7 +6,7 @@ import FiveStars from "./ui/FiveStars.jsx";
 import CustomButton from "./ui/CustomButton.jsx";
 const HeroBannerSection = () => {
     return (
-        <section className="max-w-292.5 mx-auto mt-8 px-4 sm:px-8 md:px-0">
+        <section className="max-w-292.5 mx-auto pt-8 pb-20 px-4 sm:px-8 md:px-0 ">
             <img src={Logo} alt="Logo" className="w-48 h-9"/>
             <div className="flex flex-col md:flex-row gap-16 items-center">
                 <div className="flex flex-col gap-8">
