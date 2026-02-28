@@ -6,7 +6,7 @@ import FiveStars from "./ui/FiveStars.jsx";
 import CustomButton from "./ui/CustomButton.jsx";
 const HeroBannerSection = () => {
     return (
-        <section className="max-w-292.5 mx-auto mt-8 px-4 sm:px-8 md:px-0">
+        <section className="max-w-292.5 mx-auto pt-8 pb-20 px-4 sm:px-8 md:px-0 ">
             <img src={Logo} alt="Logo" className="w-48 h-9"/>
             <div className="flex flex-col md:flex-row gap-16 items-center">
                 <div className="flex flex-col gap-8">
@@ -16,7 +16,7 @@ const HeroBannerSection = () => {
                     </div>
 
                     <div className="flex flex-col gap-5">
-                        <CustomButton classname={"border-neutral-900 rounded-sm bg-light-salmon-50 max-w-95 gradient focus-visible:outline-none"}>
+                        <CustomButton classname={"border-neutral-900 rounded-sm bg-light-salmon-50 max-w-95 gradient focus:outline-none focus:shadow-[inset_0_0_0_3px_#fff,inset_0_0_0_5px_#062630]"}>
                             <p className="font-preset-6-font-family font-preset-6-font-weight text-preset-6-mobile-font-size sm:text-preset-6-font-size leading-preset-6-line-height tracking-preset-6-letter-spacing">REVIEW MEMBERSHIP OPTIONS</p>
                             <div className="flex justify-center items-center">
                                 <img src={ArrowUpIcon} alt={"arrow-up-icon"} />
