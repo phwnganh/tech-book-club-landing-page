@@ -34,7 +34,7 @@ const MembershipPriceOptionsSection = () => {
                         return(
                         <div key={index} className={`rounded-lg border border-neutral-200 p-6 flex flex-col gap-8 ${isSecondIndex ? "shrink-0" : "shrink-0"}`}>
                             <div className={"flex flex-col gap-6 w-full"}>
-                                <h4 className={"text-neutral-900 text-preset-4-font-size font-preset-4-font-family font-preset-4-font-weight leading-preset-4-line-height tracking-preset-4-letter-spacing"}>{option.title}</h4>
+                                <h3 className={"text-neutral-900 text-preset-4-font-size font-preset-4-font-family font-preset-4-font-weight leading-preset-4-line-height tracking-preset-4-letter-spacing"}>{option.title}</h3>
                                 <div className={"flex items-center gap-2"}>
                                     <p className={"text-neutral-900 text-preset-3-font-size font-preset-3-font-family font-preset-3-font-weight leading-preset-3-line-height tracking-preset-3-letter-spacing"}>{option.price}</p>
                                     {!isLastIndex && <p className={"text-neutral-700 text-preset-5-font-size font-preset-5-font-family font-preset-5-mobile-font-weight sm:font-normal leading-preset-5-line-height tracking-preset-5-letter-spacing"}>/month</p>

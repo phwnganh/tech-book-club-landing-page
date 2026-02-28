@@ -16,7 +16,7 @@ const HeroBannerSection = () => {
                     </div>
 
                     <div className="flex flex-col gap-5">
-                        <CustomButton classname={"border-neutral-900 rounded-sm bg-light-salmon-50 max-w-95 gradient focus:outline-none"}>
+                        <CustomButton classname={"border-neutral-900 rounded-sm bg-light-salmon-50 max-w-95 gradient focus-visible:outline-none"}>
                             <p className="font-preset-6-font-family font-preset-6-font-weight text-preset-6-mobile-font-size sm:text-preset-6-font-size leading-preset-6-line-height tracking-preset-6-letter-spacing">REVIEW MEMBERSHIP OPTIONS</p>
                             <div className="flex justify-center items-center">
                                 <img src={ArrowUpIcon} alt={"arrow-up-icon"} />
